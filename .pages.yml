@@ -1,0 +1,187 @@
+media:
+  input: assets
+  output: assets
+  extensions: [jpg, jpeg, png, webp, svg]
+
+content:
+  - name: site
+    label: Cấu hình landing page
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: siteTitle
+        label: Tên website / tiêu đề trình duyệt
+        type: string
+        required: true
+      - name: metaDescription
+        label: Mô tả SEO
+        type: text
+      - name: theme
+        label: Màu sắc và chiều rộng
+        type: object
+        fields:
+          - { name: background, label: Màu nền (HEX), type: string, description: "Ví dụ #080710" }
+          - { name: panel, label: Màu khối (HEX), type: string }
+          - { name: text, label: Màu chữ (HEX), type: string }
+          - { name: muted, label: Màu chữ phụ (HEX), type: string }
+          - { name: primary, label: Màu nhấn chính (HEX), type: string }
+          - { name: secondary, label: Màu nhấn phụ (HEX), type: string }
+          - { name: maxWidth, label: Chiều rộng nội dung (px), type: number }
+      - name: logo
+        label: Logo và nhận diện
+        type: object
+        fields:
+          - name: imageUrl
+            label: Logo (chọn hoặc tải ảnh lên)
+            type: image
+            options:
+              extensions: [png, jpg, jpeg, webp, svg]
+              rename: safe
+          - { name: text, label: Tên hiển thị khi không có logo ảnh, type: string }
+          - { name: tagline, label: Dòng chữ phụ, type: string }
+          - { name: link, label: Liên kết logo, type: string }
+      - name: navigation
+        label: Menu điều hướng (có thể thêm/xóa/sắp xếp)
+        type: object
+        list:
+          min: 0
+          max: 12
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - { name: label, label: Tên mục menu, type: string, required: true }
+          - { name: url, label: Đường dẫn hoặc ID section, type: string, required: true, description: "Ví dụ #home hoặc https://..." }
+          - { name: enabled, label: Hiển thị mục menu, type: boolean }
+      - name: hero
+        label: Section 1 — Banner / thời gian
+        type: object
+        fields:
+          - { name: enabled, label: Hiển thị section, type: boolean }
+          - name: backgroundImage
+            label: Ảnh nền chìm (chọn hoặc tải ảnh lên)
+            type: image
+            required: true
+            options:
+              extensions: [jpg, jpeg, png, webp]
+              rename: safe
+          - name: bannerImage
+            label: Banner nổi (chọn hoặc tải ảnh lên)
+            type: image
+            options:
+              extensions: [jpg, jpeg, png, webp]
+              rename: safe
+          - { name: bannerAlt, label: Mô tả banner, type: string }
+          - { name: eventTime, label: Giờ tổ chức, type: string }
+          - { name: eventDate, label: Ngày giờ ISO (có múi giờ), type: string, description: "Ví dụ 2026-10-23T20:10:00+07:00" }
+          - { name: countdownLabel, label: Nhãn đồng hồ đếm ngược, type: string }
+          - { name: showCountdown, label: Hiển thị đồng hồ đếm ngược, type: boolean }
+          - { name: buttonLabel, label: Chữ trên nút, type: string }
+          - { name: buttonUrl, label: Liên kết nút, type: string }
+      - name: programme
+        label: Section 2 — Chương trình / YouTube
+        type: object
+        fields:
+          - { name: enabled, label: Hiển thị section, type: boolean }
+          - { name: id, label: ID section (để menu liên kết), type: string }
+          - { name: eyebrow, label: Nhãn nhỏ phía trên, type: string }
+          - { name: title, label: Tiêu đề section, type: string }
+          - { name: description, label: Mô tả dưới tiêu đề, type: text }
+          - { name: subEyebrow, label: Nhãn nhỏ trong nội dung, type: string }
+          - { name: headline, label: Tiêu đề nội dung, type: string }
+          - { name: paragraph1, label: Đoạn nội dung 1, type: text }
+          - { name: paragraph2, label: Đoạn nội dung 2, type: text }
+          - name: tags
+            label: Thẻ chủ đề (có thể thêm/xóa)
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Nội dung thẻ, type: string }
+          - { name: videoTitle, label: Tiêu đề video, type: string }
+          - { name: videoDescription, label: Mô tả video, type: text }
+          - { name: youtubeUrl, label: URL YouTube hoặc ID video, type: string, description: "Ví dụ https://www.youtube.com/watch?v=xxxxxxxxxxx" }
+      - name: singers
+        label: Section 3 — Ca sĩ
+        type: object
+        fields:
+          - { name: enabled, label: Hiển thị section, type: boolean }
+          - { name: eyebrow, label: Nhãn nhỏ, type: string }
+          - { name: title, label: Tiêu đề section, type: string }
+          - { name: description, label: Mô tả section, type: text }
+          - { name: buttonLabel, label: Nút phía dưới danh sách, type: string }
+          - { name: buttonUrl, label: Liên kết nút, type: string }
+          - name: items
+            label: Danh sách ca sĩ (có thể thêm/xóa/sắp xếp)
+            type: object
+            list:
+              min: 0
+              max: 50
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - { name: name, label: Tên ca sĩ / nhóm nhạc, type: string, required: true }
+              - { name: role, label: Vai trò, type: string }
+              - name: image
+                label: Ảnh chân dung (chọn hoặc tải ảnh lên)
+                type: image
+                options:
+                  extensions: [jpg, jpeg, png, webp]
+                  rename: safe
+              - { name: alt, label: Mô tả ảnh, type: string }
+              - { name: description, label: Mô tả ngắn (không bắt buộc), type: text }
+      - name: songs
+        label: Section 4 — Danh sách bài hát
+        type: object
+        fields:
+          - { name: enabled, label: Hiển thị section, type: boolean }
+          - { name: eyebrow, label: Nhãn nhỏ, type: string }
+          - { name: title, label: Tiêu đề section, type: string }
+          - { name: description, label: Mô tả section, type: text }
+          - name: items
+            label: Danh sách bài hát (có thể thêm/xóa/sắp xếp)
+            type: object
+            list:
+              min: 0
+              max: 100
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - { name: title, label: Tên bài hát, type: string, required: true }
+              - { name: performer, label: Ca sĩ trình bày (không bắt buộc), type: string }
+          - { name: linksTitle, label: Tiêu đề khu vực liên kết bên dưới bài hát, type: string }
+          - { name: linksDescription, label: Mô tả khu vực liên kết, type: text }
+          - name: socialLinks
+            label: Liên kết báo điện tử và mạng xã hội (có thể thêm/xóa/sắp xếp)
+            type: object
+            list:
+              min: 0
+              max: 30
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - { name: label, label: Tên hiển thị, type: string, required: true, description: "Ví dụ: Báo điện tử, Facebook, TikTok, YouTube" }
+              - { name: url, label: Đường dẫn đầy đủ, type: string, required: true, description: "Bắt đầu bằng https://" }
+              - { name: enabled, label: Hiển thị liên kết, type: boolean }
+      - name: footer
+        label: Footer — Chân trang
+        type: object
+        fields:
+          - { name: enabled, label: Hiển thị footer, type: boolean }
+          - { name: brandTitle, label: Tên thương hiệu, type: string }
+          - { name: tagline, label: Dòng chữ phụ, type: string }
+          - { name: description, label: Mô tả footer, type: text }
+          - { name: email, label: Email liên hệ, type: string }
+          - { name: phone, label: Điện thoại, type: string }
+          - { name: address, label: Địa chỉ, type: text }
+          - { name: copyright, label: Dòng bản quyền, type: string }
+          - { name: note, label: Ghi chú bên phải chân trang, type: string }
+          - { name: contactLabel, label: Nhãn liên kết liên hệ, type: string }
+          - { name: contactUrl, label: URL liên hệ, type: string }
+
+settings:
+  content:
+    merge: true
