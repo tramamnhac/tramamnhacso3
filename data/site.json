@@ -1,6 +1,6 @@
 {
   "siteTitle": "Trạm Âm nhạc số 3 – Mơ về nơi xa lắm",
-  "metaDescription": "Chương trình âm nhạc Trạm Âm nhạc số 3 – Mơ về nơi xa lắm tại Thanh Hóa.",
+  "metaDescription": "Chương trình âm nhạc Trạm âm nhạc số 3 - Mơ về nơi xa lắm tại Thanh Hóa.",
   "theme": {
     "background": "#080710",
     "panel": "#11101c",
@@ -40,7 +40,7 @@
     "enabled": true,
     "backgroundImage": "assets/hero-background.jpg",
     "bannerImage": "assets/hero-banner.jpg",
-    "bannerAlt": "Trạm Âm nhạc số 3 – Mơ về nơi xa lắm",
+    "bannerAlt": "Trạm âm nhạc số 3 – Mơ về nơi xa lắm",
     "eventTime": "20:10",
     "eventDate": "2026-10-23T20:10:00+07:00",
     "countdownLabel": "ĐẾM NGƯỢC ĐẾN CHƯƠNG TRÌNH",
@@ -54,9 +54,9 @@
     "menuLabel": "Giới thiệu",
     "eyebrow": "Giới thiệu",
     "title": "Chương trình",
-    "description": "Trạm Âm nhạc số 3 với chủ đề “Mơ về nới xa lắm”",
+    "description": "Trạm Âm nhạc số 3 với chủ đề “Mơ về nơi xa lắm”",
     "subEyebrow": "Điểm hẹn cảm xúc",
-    "headline": "Thăng hoa cùng những sắc màu sáng tạo",
+    "headline": "Thăng hoa cùng những sắc màu hoài niệm",
     "paragraph1": "Một cuộc hẹn với âm nhạc Phú Quang, một chuyến trở về với tình yêu, với Hà Nội và những miền ký ức không phai. Để giữa những bộn bề của hiện tại, ta có thể chậm lại một chút… lắng nghe lòng mình, nhớ về một người, một nơi, một thời đã cũ…và những điều tưởng đã xa xôi!",
     "paragraph2": "Chương trình là điểm hẹn dành cho khán giả yêu âm nhạc và những cảm xúc chân thành.",
     "tags": [
