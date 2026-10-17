@@ -1,0 +1,201 @@
+{
+  "siteTitle": "Trạm Âm nhạc số 3 – Mơ về nơi xa lắm",
+  "metaDescription": "Chương trình âm nhạc Trạm Âm nhạc số 3 – Mơ về nơi xa lắm tại Thanh Hóa.",
+  "theme": {
+    "background": "#080710",
+    "panel": "#11101c",
+    "text": "#f8f6ff",
+    "muted": "#b8b3c9",
+    "primary": "#ff3d8d",
+    "secondary": "#9c6bff",
+    "maxWidth": 1200
+  },
+  "logo": {
+    "imageUrl": "assets/logo-1.png",
+    "link": "#home"
+  },
+  "navigation": [
+    {
+      "label": "TRANG CHỦ",
+      "url": "#home",
+      "enabled": true
+    },
+    {
+      "label": "GIỚI THIỆU",
+      "url": "#chuong-trinh",
+      "enabled": true
+    },
+    {
+      "label": "CA SĨ",
+      "url": "#ca-si",
+      "enabled": true
+    },
+    {
+      "label": "BÀI HÁT",
+      "url": "#bai-hat",
+      "enabled": true
+    }
+  ],
+  "hero": {
+    "enabled": true,
+    "backgroundImage": "assets/hero-background.jpg",
+    "bannerImage": "assets/hero-banner.jpg",
+    "bannerAlt": "Trạm Âm nhạc số 3 – Mơ về nơi xa lắm",
+    "eventTime": "20:10",
+    "eventDate": "2026-10-23T20:10:00+07:00",
+    "countdownLabel": "ĐẾM NGƯỢC ĐẾN CHƯƠNG TRÌNH",
+    "buttonLabel": "Xem chi tiết",
+    "buttonUrl": "#chuong-trinh",
+    "showCountdown": true
+  },
+  "programme": {
+    "enabled": true,
+    "id": "chuong-trinh",
+    "menuLabel": "Giới thiệu",
+    "eyebrow": "Giới thiệu",
+    "title": "Chương trình",
+    "description": "Trạm Âm nhạc số 3 với chủ đề “Mơ về nới xa lắm”",
+    "subEyebrow": "Điểm hẹn cảm xúc",
+    "headline": "Thăng hoa cùng những sắc màu sáng tạo",
+    "paragraph1": "Một cuộc hẹn với âm nhạc Phú Quang, một chuyến trở về với tình yêu, với Hà Nội và những miền ký ức không phai. Để giữa những bộn bề của hiện tại, ta có thể chậm lại một chút… lắng nghe lòng mình, nhớ về một người, một nơi, một thời đã cũ…và những điều tưởng đã xa xôi!",
+    "paragraph2": "Chương trình là điểm hẹn dành cho khán giả yêu âm nhạc và những cảm xúc chân thành.",
+    "tags": [
+      {
+        "text": "Âm nhạc"
+      },
+      {
+        "text": "Cảm xúc"
+      },
+      {
+        "text": "Hoài niệm"
+      }
+    ],
+    "videoTitle": "Trailer Trạm âm nhạc số 3",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HYTslqbSEvE"
+  },
+  "singers": {
+    "enabled": true,
+    "eyebrow": "Line-up",
+    "title": "Ca sĩ",
+    "description": "Những ca sĩ góp mặt tại đêm nhạc",
+    "buttonLabel": "Danh sách bài hát",
+    "buttonUrl": "#bai-hat",
+    "items": [
+      {
+        "name": "Hoàng Nhật Minh",
+        "role": "Ca sĩ",
+        "image": "assets/hoanh-nhat-minh.jpg",
+        "alt": "Ảnh Hoành Nhật Minh"
+      },
+      {
+        "name": "Công Đại",
+        "role": "Ca sĩ",
+        "image": "assets/cong-dai.jpg",
+        "alt": "Ảnh Công Đại"
+      },
+      {
+        "name": "Như Quỳnh",
+        "role": "Ca sĩ",
+        "image": "assets/nhu-quynh.jpg",
+        "alt": "Ảnh Như Quỳnh"
+      },
+      {
+        "name": "Huệ Anh",
+        "role": "Ca sĩ",
+        "image": "assets/hue-anh.jpg",
+        "alt": "Ảnh Huệ Anh"
+      },
+      {
+        "name": "Chill Band",
+        "role": "Nhóm nhạc",
+        "image": "assets/chill-band.jpg",
+        "alt": "Ảnh Chill Band"
+      },
+      {
+        "name": "Thùy Dung",
+        "role": "Dẫn chương trình",
+        "image": "assets/thuy-dung.jpg",
+        "alt": "Ảnh Thùy Dung"
+      }
+    ]
+  },
+  "songs": {
+    "enabled": true,
+    "eyebrow": "Setlist",
+    "title": "Các bài hát trong Trạm âm nhạc số 3",
+    "items": [
+      {
+        "title": "Hà Nội và em khi thu chớm đông sang"
+      },
+      {
+        "title": "Im lặng đêm Hà Nội"
+      },
+      {
+        "title": "Em ơi Hà Nội phố"
+      },
+      {
+        "title": "Hà Nội ngày trở về"
+      },
+      {
+        "title": "Nỗi nhớ mùa đông"
+      },
+      {
+        "title": "Một dại khờ, một tôi"
+      },
+      {
+        "title": "Biển, nỗi nhớ và em"
+      },
+      {
+        "title": "Thương lắm tóc dài ơi"
+      },
+      {
+        "title": "Mơ về nơi xa lắm"
+      },
+      {
+        "title": "Khúc mùa thu"
+      },
+      {
+        "title": "Đâu phải bởi mùa thu"
+      },
+      {
+        "title": "Mùa thu dấu em"
+      },
+      {
+        "title": "Về lại phố xưa"
+      },
+      {
+        "title": "Điều giản dị"
+      }
+    ],
+    "linksTitle": "Xem thêm",
+    "socialLinks": [
+      {
+        "label": "Báo điện tử",
+        "url": "https://baothanhhoa.vn/",
+        "enabled": true
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/truyenhinhthanhhoa",
+        "enabled": true
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@truyenhinhthanhhoa.ttv",
+        "enabled": true
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@daiptththanhhoa",
+        "enabled": true
+      }
+    ]
+  },
+  "footer": {
+    "enabled": true,
+    "brandTitle": "Báo và Phát thanh, truyền hình Thanh Hóa",
+    "tagline": "Trạm Âm nhạc số 3 – Mơ về nơi xa lắm",
+    "description": "Một đêm nhạc của những giai điệu và cảm xúc.",
+    "copyright": "© 2026 Báo và Phát thanh, truyền hình Thanh Hóa. Bảo lưu mọi quyền."
+  }
+}
